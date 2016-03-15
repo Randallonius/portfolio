@@ -7,29 +7,51 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width">
+
+  <script id="dynamic-content" type="text/x-handlebars-template">
+    <div data-category="projects" class="grid">
+      <figure class="box-effect">
+        <img src="images/woods.jpg" alt="img06"/>
+        <figcaption>
+          <h2>{{title}}</h2>
+          <p>Published on: {{publishedOn}}</p>
+          <p>{{{body}}}</p>
+          <a href="{{projectUrl}}"></a>
+        </figcaption>
+      </figure>
+    </div>
+  </script>
+
 </head>
 <body>
-  <div id="home">
-  <img src="images/woods.jpg" class="woods">
-  <div class="wrapper">
-    <div class="title-nav">
-      <div class="logo">
-        <h1>Jonathan Randall</h1>
-        <h2>web developer</h2>
+<main>
+  <section id="home">
+    <img src="images/woods.jpg" class="woods">
+    <div class="wrapper">
+      <div class="home-title-nav">
+        <div class="logo">
+          <h1>Jonathan Randall</h1>
+          <h2>web developer</h2>
+        </div>
+      </div>
+      <div class=splash-main>
+        <div class=splash-links><h1>PORTFOLIO</h1></div>
+        <div class="lines">
+          <hr class="line-vertical">
+          <hr class="line-horizontal">
+        </div>
+        <div class=splash-links><h1>ABOUT</h1></div>
       </div>
     </div>
-    <div class=splash-main>
-      <div class=splash-links><h1>PORTFOLIO</h1></div>
-      <div class="lines">
-        <hr class="line-vertical">
-        <hr class="line-horizontal">
-      </div>
-      <div class=splash-links><h1>ABOUT</h1></div>
-    </div>
-  </div>
-</div>
-<script src="/scripts/jquery-1.11.3.js"></script>
-<script src="/scripts/handlebars-v4.0.5.js"></script>
-<script src="/scripts/page.js"></script>
+  </section>
+  <section id="portfolio" class="tab-content">
+    <div class="portfolio-header"><h1>Personal Projects</h1></div>
+  </section>
+</main>
+<script src="scripts/jquery-1.11.3.js"></script>
+<script src="scripts/handlebars-v4.0.5.js"></script>
+<script src="scripts/page.js"></script>
+<script src="scripts/portfolio.js"></script>
+<script src="scripts/portfolioView.js"></script>
 </body>
 </html>
