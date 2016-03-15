@@ -7,6 +7,21 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width">
+
+<script id="dynamic-content" type="text/x-handlebars-template">
+  <div data-category="projects" class="grid">
+    <figure class="box-effect">
+      <img src="images/woods.jpg" alt="img06"/>
+      <figcaption>
+        <h2>{{title}}</h2>
+        <p>Published on: {{publishedOn}}</p>
+        <p>{{{body}}}</p>
+        <a href="{{projectUrl}}"></a>
+      </figcaption>
+    </figure>
+  </div>
+  </script>
+  
 </head>
 <body>
   <div id="home">
