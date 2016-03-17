@@ -2,8 +2,8 @@
   var homeController = {};
 
   homeController.index = function() {
-    repos.repoRequest(repoView.index);
-    $('main > section').hide();
+    $('header', 'main > section', '.portfolio-header').hide();
+    $('#portfolio').hide();
     $('#home').show();
   };
 

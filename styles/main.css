@@ -13,7 +13,84 @@ a {
 a:hover, a:focus {
 	color: #528cb3;
 }
+header {
+  height: 200px;
+  /*background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/woods.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;*/
+}
+/*****BASE HEADER*****/
 
+.logo-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: baseline;
+  text-transform: uppercase;
+  font-family: 'Oxygen', sans-serif;
+  color: #fff;
+  border-bottom: 1px solid;
+  font-weight: 100;
+}
+.logo {
+  display: flex;
+  align-items: baseline;
+  margin-left: 40px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.logo h1{
+  font-weight: 100;
+  margin-bottom: 0;
+}
+.logo h2 {
+  font-weight: 100;
+  margin: 0 auto;
+}
+.main-nav {
+  /* width: 400px; */
+  display: flex;
+  /* justify-content: space-around; */
+  margin: 0 auto;
+}
+.main-nav ul{
+  display: flex;
+  justify-content: space-between;
+  /* margin-right: 20px; */
+  padding-left: 0;
+  width: 300px;
+}
+.main-nav li{
+  text-decoration: none;
+  list-style-type: none;
+}
+.main-nav a{
+  color: #fff;
+}
+.hover-line {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+  color: #ddd;
+}
+.hover-line:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.hover-line:hover {
+  cursor: pointer;
+}
+.hover-line:hover:after {
+	width: 100%;
+	background: #fff;
+}
+/*****HOME*****/
 img.woods {
     min-height: 100%;
     min-width: 1024px;
@@ -33,27 +110,27 @@ img.woods {
     right:0;
     bottom:0;
     left:0;
-    height: 1000px;
+    height: 1200px;
 }
-.home-title-nav {
+.home-title {
   display: flex;
   align-items: baseline;
   justify-content: center;
   border-bottom: 1px solid #fff;
   padding-bottom: 20px;
 }
-.logo {
+.logo-home {
 display: flex;
 justify-content: center;
 flex-direction: column;
 }
-.logo h1, h2{
+.logo-home h1, h2{
   display: flex;
   font-family: 'Oxygen', sans-serif;
   text-transform: uppercase;
   color: #fff;
 }
-.logo h1 {
+.logo-home h1 {
   margin-bottom: 0;
   font-weight: 300;
   letter-spacing: 10px;
@@ -92,7 +169,7 @@ flex-direction: column;
   text-decoration: none;
   color: #5a5a5a;
 }
-/*Splash Main*/
+
 .splash-main {
   display: flex;
   flex-direction: column;
@@ -121,18 +198,16 @@ flex-direction: column;
   padding-left: 10px;
   }
   .splash-links:hover {
-     border-color: coral;
+    border-color: #8d8d8d;
+    background: rgba(0, 0, 0, 0.5);
   }
   .splash-links:hover h1{
-    color: coral;
+    color: #fff;
   }
   .lines {
     display: none;
   }
 
-  .lines:hover hr{
-    border-color: coral;
-  }
   .line-horizontal {
     position: absolute;
     width: 200px;
@@ -154,6 +229,18 @@ flex-direction: column;
   }
 
 /*******Portfolio Section*******/
+.portfolio-header {
+  font-family: 'Oxygen', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+  border-bottom: 1px solid #fff;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
 .grid {
 	position: relative;
 	margin: 0 auto;
@@ -356,15 +443,24 @@ figure.box-effect:hover img {
     height: 800px;
   }
 }
-@media screen and (max-width: 485px) {
-  .logo h1{
-    font-size: 20px;
+@media screen and (min-width: 815px) {
+  .logo-nav {
+    flex-direction: row;
   }
-  .logo h2{
-    font-size: 18px;
+  .logo {
+    flex-direction: row;
+    margin-left: 20px;
+  }
+  .logo h2 {
+    padding-left: 20px;
+    font-size: 16px;
+  }
+  .main-nav {
+    margin-right: 40px;
   }
 }
 @media screen and (max-width: 50em) {
+
 	.content {
 		padding: 0 10px;
 		text-align: center;
