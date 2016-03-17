@@ -7,5 +7,5 @@
     $('#home').show();
   };
 
-  module.aboutController = aboutController;
+  module.homeController = homeController;
 }) (window);
