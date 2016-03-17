@@ -13,7 +13,57 @@ a {
 a:hover, a:focus {
 	color: #528cb3;
 }
+header {
+  height: 200px;
+}
+/*****BASE HEADER*****/
 
+.logo-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: baseline;
+  text-transform: uppercase;
+  font-family: 'Oxygen', sans-serif;
+  color: #fff;
+  border-bottom: 1px solid;
+  font-weight: 100;
+}
+.logo {
+  display: flex;
+  align-items: baseline;
+  margin-left: 20px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.logo h1{
+  font-weight: 100;
+  margin-bottom: 0;
+}
+.logo h2 {
+  font-weight: 100;
+  margin: 0 auto;
+}
+.main-nav {
+  /* width: 400px; */
+  display: flex;
+  /* justify-content: space-around; */
+  margin: 0 auto;
+}
+.main-nav ul{
+  display: flex;
+  justify-content: space-between;
+  /* margin-right: 20px; */
+  padding-left: 0;
+  width: 300px;
+}
+.main-nav li{
+  text-decoration: none;
+  list-style-type: none;
+}
+.main-nav a{
+  color: #fff;
+}
 /*****HOME*****/
 img.woods {
     min-height: 100%;
@@ -36,25 +86,25 @@ img.woods {
     left:0;
     height: 1200px;
 }
-.home-title-nav {
+.home-title {
   display: flex;
   align-items: baseline;
   justify-content: center;
   border-bottom: 1px solid #fff;
   padding-bottom: 20px;
 }
-.logo {
+.logo-home {
 display: flex;
 justify-content: center;
 flex-direction: column;
 }
-.logo h1, h2{
+.logo-home h1, h2{
   display: flex;
   font-family: 'Oxygen', sans-serif;
   text-transform: uppercase;
   color: #fff;
 }
-.logo h1 {
+.logo-home h1 {
   margin-bottom: 0;
   font-weight: 300;
   letter-spacing: 10px;
@@ -367,15 +417,24 @@ figure.box-effect:hover img {
     height: 800px;
   }
 }
-@media screen and (max-width: 485px) {
-  .logo h1{
-    font-size: 20px;
+@media screen and (min-width: 815px) {
+  .logo-nav {
+    flex-direction: row;
   }
-  .logo h2{
-    font-size: 18px;
+  .logo {
+    flex-direction: row;
+    margin-left: 20px;
+  }
+  .logo h2 {
+    padding-left: 20px;
+    font-size: 16px;
+  }
+  .main-nav {
+    margin-right: 20px;
   }
 }
 @media screen and (max-width: 50em) {
+
 	.content {
 		padding: 0 10px;
 		text-align: center;
