@@ -49,20 +49,33 @@ flex-direction: column;
 }
 .logo h1, h2{
   display: flex;
-  padding-left: 20px;
   font-family: 'Oxygen', sans-serif;
   text-transform: uppercase;
   color: #fff;
-  letter-spacing: 10px;
 }
 .logo h1 {
   margin-bottom: 0;
   font-weight: 300;
+  letter-spacing: 10px;
 }
-.logo h2 {
+.logo-subline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-subline h2 {
   text-align: center;
   margin: 0 auto;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 10px;
+  letter-spacing: 5px;
 }
+.logo-subline hr {
+  width: 20px;
+  margin: 10px;
+}
+
 .menu ul{
   display: flex;
   padding-right: 20px;
