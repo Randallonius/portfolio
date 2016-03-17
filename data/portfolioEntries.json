@@ -1,0 +1,18 @@
+[
+  {
+    "title":       "Bike Bright",
+    "category":    "HTML, CSS, JavaScript, Google api, node",
+    "publishedOn": "02-27-2016",
+    "projectUrl":  "http://bikebright.herokuapp.com",
+    "projectImg":  "images/bicycle.jpg",
+    "body":        "<p>Bike Bright was a collaborative effort between myself and three others over two weeks at Code Fellows. It is a single page web app that allows the user to get in touch with the Portland community to find up date bicycle parking and locations of bicycle theft.</p>"
+  },
+  {
+    "title":       "Discover Portland",
+    "category":    "HTML, CSS, JavaScript, mobile",
+    "publishedOn": "12-21-2015",
+    "projectUrl":  "http://risachi.github.io/travel-project/index.html",
+    "projectImg":  "images/portland.jpg",
+    "body":        "<p>Discover Portland was my first collaborative project at Code Fellows. It allows the user to get updated information on activities to do in the area based on their lifestyle choices.</p>"
+  }
+]

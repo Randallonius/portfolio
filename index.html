@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width">
+
+  <script id="dynamic-content" type="text/x-handlebars-template">
+    <div data-category="projects" class="grid">
+      <figure class="box-effect">
+        <img src="{{projectImg}}"></img>
+        <figcaption>
+          <h2>{{title}}</h2>
+          <p>Published on: {{publishedOn}}</p>
+          <p>{{{body}}}</p>
+          <a href="{{projectUrl}}"></a>
+        </figcaption>
+      </figure>
+    </div>
+  </script>
+
+</head>
+<body>
+  <header>
+    <div class="logo-nav">
+      <div class="logo">
+        <h1>Jonathan Randall</h1>
+        <h2>Web Developer</h2>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li class="hover-line"><a href="/">home</a></li>
+          <li class="hover-line"><a href="/portfolio">portfolio</a></li>
+          <li class="hover-line"><a href="/about">about</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main>
+  <section id="home">
+    <img src="images/woods.jpg" class="woods">
+    <div class="wrapper">
+      <div class="home-title">
+        <div class="logo-home">
+          <h1>Jonathan Randall</h1>
+          <div class="logo-subline">
+            <hr class="hr-left"><h2>web developer</h2><hr class="hr-right">
+          </div>
+        </div>
+      </div>
+      <div class=splash-main>
+        <a class=splash-links href="/portfolio"><div><h1>PORTFOLIO</h1></div></a>
+        <div class="lines">
+          <hr class="line-vertical">
+          <hr class="line-horizontal">
+        </div>
+        <a class=splash-links href="/about"><div><h1>ABOUT</h1></div></a>
+      </div>
+    </div>
+  </section>
+  <div class="portfolio-header"><h1>Portfolio</h1></div>
+  <section id="portfolio" class="tab-content"></section>
+</main>
+<script src="scripts/jquery-1.11.3.js"></script>
+<script src="scripts/handlebars-v4.0.5.js"></script>
+<script src="scripts/page.js"></script>
+<script src="scripts/portfolio.js"></script>
+<script src="scripts/portfolioView.js"></script>
+<script src="scripts/aboutController.js"></script>
+<script src="scripts/portfolioController.js"></script>
+<script src="scripts/homeController.js"></script>
+<script src="scripts/routes.js"></script>
+</body>
+</html>
