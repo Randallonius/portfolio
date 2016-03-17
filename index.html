@@ -11,7 +11,7 @@
   <script id="dynamic-content" type="text/x-handlebars-template">
     <div data-category="projects" class="grid">
       <figure class="box-effect">
-        <img src="images/woods.jpg" alt="img06"/>
+        <img src="{{projectImg}}"></img>
         <figcaption>
           <h2>{{title}}</h2>
           <p>Published on: {{publishedOn}}</p>
@@ -31,16 +31,18 @@
       <div class="home-title-nav">
         <div class="logo">
           <h1>Jonathan Randall</h1>
-          <h2>web developer</h2>
+          <div class="logo-subline">
+            <hr class="hr-left"><h2>web developer</h2><hr class="hr-right">
+          </div>
         </div>
       </div>
       <div class=splash-main>
-        <div class=splash-links><h1>PORTFOLIO</h1></div>
+        <div class=splash-links><a href="/portfolio"><h1>PORTFOLIO</h1></a></div>
         <div class="lines">
           <hr class="line-vertical">
           <hr class="line-horizontal">
         </div>
-        <div class=splash-links><h1>ABOUT</h1></div>
+        <div class=splash-links><a href="/about"><h1>ABOUT</h1></a></div>
       </div>
     </div>
   </section>
