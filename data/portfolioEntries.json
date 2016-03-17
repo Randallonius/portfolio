@@ -14,21 +14,5 @@
     "projectUrl":  "http://risachi.github.io/travel-project/index.html",
     "projectImg":  "images/portland.jpg",
     "body":        "<p>Discover Portland was my first collaborative project at Code Fellows. It allows the user to get updated information on activities to do in the area based on their lifestyle choices.</p>"
-  },
-  {
-    "title":       "Donut Shop",
-    "category":    "HTML, CSS, JavaScript",
-    "publishedOn": "11-15-2015",
-    "projectUrl":  "http://randallonius.github.io/Donutshop/donutshop.html",
-    "projectImg":  "images/donut.jpg",
-    "body":        "<p>Donut Shop was a simple JavaScript app that allows the user to dynamically adjust the necessary requirements needed for service for donut shops in the Portland area. The results are then displayed on a chart.</p>"
-  },
-  {
-    "title":       "Musician Vote Tracker",
-    "category":    "HTML, CSS, JavaScript, mobile",
-    "publishedOn": "12-01-2015",
-    "projectUrl":  "http://randallonius.github.io/Vote-Tracker/vote.html",
-    "projectImg":  "images/guitar.jpg",
-    "body":        "<p>The Musician Vote Tracker was a small JavaScript app to allow users to vote on their favorite bands and have the chart update dynamically. The results will persistently stay upon leaving the window.</p>"
   }
 ]
