@@ -15,6 +15,10 @@ a:hover, a:focus {
 }
 header {
   height: 200px;
+  /*background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/woods.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;*/
 }
 /*****BASE HEADER*****/
 
@@ -32,7 +36,7 @@ header {
 .logo {
   display: flex;
   align-items: baseline;
-  margin-left: 20px;
+  margin-left: 40px;
   flex-direction: column;
   margin: 0 auto;
 }
@@ -63,6 +67,28 @@ header {
 }
 .main-nav a{
   color: #fff;
+}
+.hover-line {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+  color: #ddd;
+}
+.hover-line:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.hover-line:hover {
+  cursor: pointer;
+}
+.hover-line:hover:after {
+	width: 100%;
+	background: #fff;
 }
 /*****HOME*****/
 img.woods {
@@ -430,7 +456,7 @@ figure.box-effect:hover img {
     font-size: 16px;
   }
   .main-nav {
-    margin-right: 20px;
+    margin-right: 40px;
   }
 }
 @media screen and (max-width: 50em) {
