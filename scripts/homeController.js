@@ -2,7 +2,7 @@
   var homeController = {};
 
   homeController.index = function() {
-    $('main > section', '.portfolio-header').hide();
+    $('main > section', '.portfolio-header', '#portfolio').hide();
     $('#home').show();
   };
 

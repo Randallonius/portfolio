@@ -122,18 +122,16 @@ flex-direction: column;
   padding-left: 10px;
   }
   .splash-links:hover {
-     border-color: coral;
+    border-color: #8d8d8d;
+    background: rgba(0, 0, 0, 0.5);
   }
   .splash-links:hover h1{
-    color: coral;
+    color: #fff;
   }
   .lines {
     display: none;
   }
 
-  .lines:hover hr{
-    border-color: coral;
-  }
   .line-horizontal {
     position: absolute;
     width: 200px;
