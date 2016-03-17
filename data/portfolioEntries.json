@@ -4,7 +4,7 @@
     "category":    "HTML, CSS, JavaScript, Google api, node",
     "publishedOn": "02-27-2016",
     "projectUrl":  "http://bikebright.herokuapp.com",
-    "projectImg":  "images/bikebrightcircle.png",
+    "projectImg":  "images/bicycle.jpg",
     "body":        "<p>Bike Bright was a collaborative effort between myself and three others over two weeks at Code Fellows. It is a single page web app that allows the user to get in touch with the Portland community to find up date bicycle parking and locations of bicycle theft.</p>"
   },
   {
@@ -28,7 +28,7 @@
     "category":    "HTML, CSS, JavaScript, mobile",
     "publishedOn": "12-01-2015",
     "projectUrl":  "http://randallonius.github.io/Vote-Tracker/vote.html",
-    "projectImg":  "images/vote-tracker.png",
+    "projectImg":  "images/guitar.jpg",
     "body":        "<p>The Musician Vote Tracker was a small JavaScript app to allow users to vote on their favorite bands and have the chart update dynamically. The results will persistently stay upon leaving the window.</p>"
   }
 ]

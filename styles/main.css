@@ -171,7 +171,6 @@ flex-direction: column;
 	max-width: 480px;
 	max-height: 360px;
 	width: 48%;
-	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
 }
@@ -183,6 +182,7 @@ flex-direction: column;
 	max-width: 100%;
 	opacity: 0.8;
 }
+
 
 .grid figure figcaption {
 	padding: 2em;
@@ -232,9 +232,6 @@ flex-direction: column;
 /***** Box-effect *****/
 /*--------------------*/
 
-figure.box-effect {
-	background: #262626;
-}
 
 figure.box-effect img {
 	height: 390px;
@@ -283,6 +280,7 @@ figure.box-effect h2 {
 	transition: transform 0.35s;
   display: flex;
   justify-content: center;
+  letter-spacing: 3px;
 }
 
 figure.box-effect p {
@@ -291,6 +289,7 @@ figure.box-effect p {
 	opacity: 0;
 	-webkit-transform: translate3d(0,-10px,0);
 	transform: translate3d(0,-10px,0);
+  letter-spacing: 2px;
 }
 
 figure.box-effect img,
@@ -308,7 +307,7 @@ figure.box-effect p {
 }
 
 figure.box-effect:hover img {
-	opacity: 0.7;
+	opacity: 0.2;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
